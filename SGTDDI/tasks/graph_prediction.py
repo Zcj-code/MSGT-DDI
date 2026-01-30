@@ -369,7 +369,7 @@ class GraphPredictionDDIConfig(GraphPredictionConfig):
         default=True,
         metadata={"help": "每次验证后顺带评估 test 集合（仅记录，不影响 early stop / 最佳指标 / 学习率）"}
     )
-    output_folder:str = field(default='/root/autodl-tmp/zcj/deepgraph/result/')
+    output_folder:str = field(default='/root/SGTDDI/result/')
 
 
 @register_task("graph_prediction_ddi", dataclass=GraphPredictionDDIConfig)
